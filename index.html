@@ -9,7 +9,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
             padding: 50px 20px;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            background: #3498db;
             color: #fff;
             margin: 0;
             height: 100vh;
@@ -30,6 +30,11 @@
         h1 { margin: 0 0 10px 0; font-size: 28px; letter-spacing: 1px; }
         p { margin: 0 0 30px 0; color: #e0e0e0; font-size: 16px; }
         audio { width: 100%; border-radius: 8px; }
+        .status {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #a0d8ff;
+        }
     </style>
 </head>
 <body>
@@ -38,13 +43,12 @@
         <h1>Web Rádio Souza Lobo</h1>
         <p>Rádio Escolar • Ao Vivo</p>
         
-        <!-- Player conectado diretamente ao ponto de montagem do Icecast -->
         <audio controls>
-            <source src="yanapak.org:8000/escola_souza_lobo" type="audio/mpeg">
+            <source src="http://radios.yanapak.org:8000/escola_souza_lobo" type="audio/mpeg">
             Seu navegador não suporta o reprodutor de áudio.
         </audio>
+        <div class="status">📻 Stream ao vivo | Icecast Server</div>
     </div>
 
 </body>
 </html>
-
